@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --quote: 28px;
+}
+body{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+#card{
+    background-color: var(--Dark-Grayish-Blue);
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em;
+    border-radius: 0.75em;
+}
+.title{
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    font-size: 12px;
+    padding-bottom: 0.9em;
+    padding-top: 1em;
+}
+.quote{
+    font-size: var(--quote);
+    color: var(--Light-Cyan);
+    margin-bottom: 1.4em;
+}
+#divider{
+    display: block;
+    width: 100%;
+    margin-bottom: 1.3em;
+}
+#btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    background: var(--Neon-Green);
+    border: none;
+    padding: 15px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#btn:hover{
+    box-shadow: 1px 5px 15px hsl(150, 100%, 66%);
+    transition-duration:0.3s ;
+}
+@media  (max-width:475px) {
+    #card{
+        margin: 0 12px;
+        padding: 1.3em;
+    }
+    #btn{
+        top:75%;
+    }
+}
